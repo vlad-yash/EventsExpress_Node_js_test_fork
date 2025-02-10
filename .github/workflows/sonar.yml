@@ -32,4 +32,5 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_ORG: vlad-yash
-        run: npx sonarqube-scanner -Dsonar.organization=$SONAR_ORG 
+          SONAR_PROJECT_KEY: eventsexpress_node_js
+        run: npx sonarqube-scanner -Dsonar.organization=$SONAR_ORG -Dsonar.projectKey=$SONAR_PROJECT_KEY
