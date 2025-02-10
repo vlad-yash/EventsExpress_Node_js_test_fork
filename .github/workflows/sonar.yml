@@ -31,6 +31,4 @@ jobs:
       - name: Run SonarCloud analysis
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_ORG: vlad-yash
-          SONAR_PROJECT_KEY: EventsExpress_Node_js_test_fork
-        run: npx sonarqube-scanner -Dsonar.organization=$SONAR_ORG -Dsonar.projectKey=$SONAR_PROJECT_KEY
+        run: npx sonarqube-scanner
