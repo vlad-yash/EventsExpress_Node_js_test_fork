@@ -1,5 +1,5 @@
 {
-  "name": "eventsexpress_node_js",
+  "name": "Node_js",
   "description": "EventsExpress project Node.js part",
   "version": "1.0.0",
   "main": "src/index.js",
